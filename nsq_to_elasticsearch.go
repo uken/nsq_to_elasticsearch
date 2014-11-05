@@ -109,7 +109,7 @@ func main() {
 	flag.Parse()
 
 	if *showVersion {
-		fmt.Printf("nsq_to_http v%s\n", util.BINARY_VERSION)
+		fmt.Printf("nsq_to_elasticsearch v%s\n", util.BINARY_VERSION)
 		return
 	}
 
@@ -137,7 +137,7 @@ func main() {
 	}
 
 	cfg := nsq.NewConfig()
-	cfg.UserAgent = fmt.Sprintf("nsq_to_http/%s go-nsq/%s", util.BINARY_VERSION, nsq.VERSION)
+	cfg.UserAgent = fmt.Sprintf("nsq_to_elasticsearch/%s go-nsq/%s", util.BINARY_VERSION, nsq.VERSION)
 	err = util.ParseOpts(cfg, consumerOpts)
 	if err != nil {
 		log.Fatal(err)
