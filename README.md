@@ -25,5 +25,4 @@ Index all messages from a given topic, setting the proper elasticsearch index na
 - Get NSQd instances from `lookupd.local:4161`
 - Set index name to `nsq-test-<YYYY>-<MM>-<DD>`
 
-
-    nsq_to_elasticsearch  -elasticsearch http://es1.local:9200 -elasticsearch http://es2.local:9200 -elasticsearch http://es3.local:9200 -lookupd-http-address lookupd.local:4161 -topic logs -index-name="nsq-test-%Y.%m.%d"
+        nsq_to_elasticsearch  -elasticsearch http://es1.local:9200 -elasticsearch http://es2.local:9200 -elasticsearch http://es3.local:9200 -lookupd-http-address lookupd.local:4161 -topic logs -index-name="nsq-test-%Y.%m.%d"
